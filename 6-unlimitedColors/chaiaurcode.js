@@ -24,7 +24,6 @@ let randomColor = function () {
   const stopBgColorBtn = function () {
     clearInterval(intervalId);
     intervalId = null;
-    // console.log(intervalId);
   };
   document.getElementById('start').addEventListener('click', startBgColorBtn);
   
