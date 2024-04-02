@@ -28,5 +28,5 @@ let randomColor = function () {
   };
   document.getElementById('start').addEventListener('click', startBgColorBtn);
   
-  document.getElementById('start').addEventListener('click', stopBgColorBtn);
+  document.getElementById('stop').addEventListener('click', stopBgColorBtn);
   
