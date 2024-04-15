@@ -13,3 +13,13 @@ const colors = [
   '#B34D4D',
 ];
 // add circle to cursor and change it's color as cursor moves on the screen. Pick color from these array
+
+window.onload = function () {
+  document.body.onmousemove = function (e) {
+    var e = e || window.event;
+    cursor.style.left = e.clientX - 5 + 'px';
+    cursor.style.top = e.clientY - 5 + 'px';
+    cursor.style.backgroundColor =
+      colors[Math.floor(Math.random() * colors.length + 1)];
+  };
+};
